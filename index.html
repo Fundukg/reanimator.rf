@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=call,delivery_truck_speed,event_available,featured_seasonal_and_gifts,percent_discount,person_shield,settings"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=call,delivery_truck_speed,event_available,featured_seasonal_and_gifts,location_on,mail,pace,percent_discount,person_shield,settings,visibility"
     />
+    <script src="./main.js" defer></script>
     <title>
       СЦ Реаниматор — ремонт ЖК телевизоров и мониторов, ноутбуков и компьютеров
       в Сыктывкаре
@@ -540,6 +541,7 @@
               href="https://yandex.ru/maps/org/83211793001"
               class="review_button_link"
               target="_blank"
+              ><span class="material-symbols-outlined"> visibility </span
               >Смотреть все отзывы в Яндексе</a
             >
 
@@ -554,12 +556,90 @@
               href="https://www.avito.ru/brands/i91243415?gdlkerfdnwq=101&page_from=from_item_header&iid=4405250750&page_from=from_item_card&iid=4405250750"
               class="review_button_link"
               target="_blank"
+              ><span class="material-symbols-outlined"> visibility </span
               >Смотреть все отзывы в Авито</a
-            ><img src="./img/review/Авито.png" alt="avito review" class="review_avito" />
+            ><img
+              src="./img/review/Авито.png"
+              alt="avito review"
+              class="review_avito"
+            />
           </div>
         </div>
       </section>
-      <section class="contacts"></section>
+      <section class="contacts">
+        <div class="contacts_container">
+          <div class="contacts_container_title">
+            <h2 class="contacts_title_text">Контакты</h2>
+          </div>
+          <div class="contacts_container_place">
+            <div
+              class="contacts_container_map"
+              id="yandex-map-container"
+              style="height: 500px"
+            ></div>
+            <div class="contacts_container_addres">
+              <p class="contacts_our_addres">Наш адрес:</p>
+              <p class="contacts_addres">
+                <span class="material-symbols-outlined"> location_on </span>г.
+                Сыктывкар, ул. Первомайская, д.62, 3 этаж
+              </p>
+              <p class="contacts_time_work">
+                <span class="material-symbols-outlined"> pace </span>Время
+                работы: ПН-ПТ с 10:00 до 19:00, СБ с 10:00 до 17:00, ВС с 11:00
+                до 15:00
+              </p>
+              <p class="contacts_our_number">Наши телефоны:</p>
+              <a href="tel:+78212568786" class="contacts_number"
+                ><span class="material-symbols-outlined"> call </span>+7(8212)
+                56-87-86</a
+              >
+              <a href="tel:+79042248786" class="contacts_number"
+                ><span class="material-symbols-outlined"> call </span
+                >+7(904)224-87-86</a
+              >
+              <p class="contacts_our_email">Электронная почта:</p>
+              <a href="mailto:568786@list.ru" class="contacts_email">
+                <span class="material-symbols-outlined">mail</span>
+                568786@list.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location">
+        <div class="location_container">
+          <div class="location_container_grid">
+            <div class="location_container_item">
+              <img src="./img/location/IMG_7354.jpg" alt="Вид с улицы" />
+            </div>
+            <div class="location_container_item">
+              <img src="./img/location/Свечка вход.jpg" alt="Вход" />
+            </div>
+            <div class="location_container_item">
+              <img src="./img/location/Свечка двор.jpg" alt="Вид со двора" />
+            </div>
+            <div class="location_container_item">
+              <img src="./img/location/Свечка этаж.jpg" alt="Этаж" />
+            </div>
+          </div>
+          <div class="location_container_video">
+            <video controls poster="./img/location/video_preview.jpg">
+              <source src="./video/how_to_find_us.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <p class="footer_text">
+          ВНИМАНИЕ! ДАННЫЙ САЙТ НОСИТ ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ ПРИ КАКИХ
+          УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, КОТОРАЯ ОПРЕДЕЛЯЕТСЯ
+          ПОЛОЖЕНИЯМИ СТАТЬИ 437 (2) ГРАЖДАНСКОГО КОДЕКСА РФ
+        </p>
+        <p class="footer_text">© 2025. Все права защищены.</p>
+      </div>
+    </footer>
   </body>
 </html>

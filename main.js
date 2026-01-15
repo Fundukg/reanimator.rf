@@ -1,0 +1,14 @@
+function initMap() {
+  const map = document.getElementById("yandex-map-container");
+  if (map) {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.charset = "utf-8";
+    script.async = true;
+    script.src =
+      "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b3c4e3cc05e93c3d563a495387dafd90a3aa81dcb3241299eab9987da8ebcf8&amp;width=100%&amp;height=720&amp;lang=ru_RU&amp;scroll=true";
+    map.appendChild(script);
+  }
+}
+window.addEventListener('DOMContentLoaded', initMap);
+
