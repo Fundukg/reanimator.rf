@@ -10,5 +10,20 @@ function initMap() {
     map.appendChild(script);
   }
 }
-window.addEventListener('DOMContentLoaded', initMap);
+function toggleIsOpen(event) {
+  const headerText = event.currentTarget.querySelector('.malfunction_TV_header_text');
+  const arrow_up = headerText.querySelector(".arrow_up");
+  const arrow_down = headerText.querySelector(".arrow_down");
 
+  arrow_up?.classList.toggle("active");
+  arrow_down?.classList.toggle("active");
+  event.currentTarget.nextElementSibling?.classList.toggle("is_open");
+}
+
+window.addEventListener("DOMContentLoaded", initMap);
+
+const lists = document.querySelectorAll(".malfunction_TV_header_container");
+
+lists.forEach((list) => {
+  list.addEventListener("click", toggleIsOpen);
+});
