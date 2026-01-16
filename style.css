@@ -1,5 +1,169 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100%;
+
+  background-color: #ffffff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+.header_container {
+  width: 100%;
+  max-width: 2000px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header_container_logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header_container_logo_img {
+  height: 80%;
+  border-radius: 20px;
+}
+.header_container_contact {
+  display: flex;
+  flex-direction: column;
+}
+.header_contact_text_call {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+.header_contact_text_number {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+main {
+  padding-top: 150px;
+  width: 100%;
+}
+
+.img_and_services {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.img_and_services_container {
+  width: 100%;
+  height: 100%;
+}
+.img_and_services_container_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: start;
+  width: 100%;
+}
+.img_container {
+  grid-area: 1 / 1;
+  z-index: 1;
+  width: 100%;
+}
+
+.img_and_services_img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50px;
+  filter: brightness(0.6);
+}
+
+.services_wrapper {
+  grid-area: 1 / 1;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  padding-left: 5%;
+}
+
+.glass_card {
+  background: rgba(25, 15, 15, 0.6);
+  backdrop-filter: blur(15px) saturate(160%);
+  -webkit-backdrop-filter: blur(15px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service_text_title {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+}
+
+.service_text_list_title {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.service_text_list {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.service_text_list:last-child {
+  margin-bottom: 0;
+}
+
+.material-symbols-outlined {
+  margin-right: 15px;
+  font-size: 22px !important;
+  color: #ff9800;
+  background: rgba(255, 152, 0, 0.1);
+  padding: 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.service_text_list_bold {
+  font-weight: 700;
+  color: #ffffff;
 }

@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=call,delivery_truck_speed,event_available,featured_seasonal_and_gifts,location_on,mail,pace,percent_discount,person_shield,settings,visibility"
     />
     <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>
       СЦ Реаниматор — ремонт ЖК телевизоров и мониторов, ноутбуков и компьютеров
       в Сыктывкаре
@@ -17,80 +18,110 @@
     <header class="header">
       <div class="header_container">
         <div class="header_container_logo">
-          <img src="./img/logos/logo.png" alt="logo" />
+          <img
+            src="./img/logos/logo.png"
+            class="header_container_logo_img"
+            alt="logo"
+          />
         </div>
         <div class="header_container_contact">
-          <h2 class="header_container_contact_text">
-            <a href="tel:+78212568786">Звоните!</a>
-          </h2>
-          <h2 class="header_container_contact_text">
-            <a href="tel:+78212568786">+7 (8212) 568786</a>
-          </h2>
+          <a href="tel:+78212568786" class="header_contact_text_call"
+            >Звоните!</a
+          >
+          <a href="tel:+78212568786" class="header_contact_text_number"
+            >56-87-86</a
+          >
         </div>
       </div>
     </header>
     <main class="main">
       <section class="img_and_services">
         <div class="img_and_services_container">
-          <div class="img_container">
-            <img
-              src="./img/IMG_20260113_144103.jpg"
-              alt="work table"
-              class="img_and_services_img"
-            />
-          </div>
-          <div class="services_container">
-            <h1 class="service_text_title">
-              Ремонт телевизоров и ноутбуков в Сыктывкаре
-            </h1>
-            <h2 class="service_text_list_title">Наши услуги и гарантии</h2>
-            <ul>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined"> person_shield </span>
-                <span class="service_text_list_bold"
-                  >Срок ремонта от 1 дня —</span
-                >показываем скорость.
-              </li>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined"> settings </span>
-                <span class="service_text_list_bold"
-                  >Ремонт любой сложности —</span
-                >подчеркиваем профессионализм.
-              </li>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined"> event_available </span>
-                <span class="service_text_list_bold">Гарантия 1 год —</span>
-                даем уверенность в результате.
-              </li>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined">
-                  percent_discount
-                </span>
-                <span class="service_text_list_bold">Всегда низкие цены —</span
-                >обосновываем выбор.
-              </li>
-            </ul>
-            <h2 class="service_text_list_title">Ваши бонусы</h2>
-            <ul>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined">
-                  featured_seasonal_and_gifts
-                </span>
-                <span class="service_text_list_bold">Диагностика 0 ₽ —</span
-                >даже если вы откажетесь от ремонта.
-              </li>
-              <li class="service_text_list">
-                <span class="material-symbols-outlined">
-                  delivery_truck_speed
-                </span>
-                <span class="service_text_list_bold">Доставка техники —</span
-                >сами увезем и привезем ваш телевизор.
-              </li>
-            </ul>
+          <div class="img_and_services_container_grid">
+            <div class="img_container">
+              <img
+                src="./img/IMG_20260113_144103.jpg"
+                alt="work table"
+                class="img_and_services_img"
+              />
+            </div>
+
+            <div class="services_wrapper">
+              <div class="glass_card main_title_card">
+                <h1 class="service_text_title">
+                  Ремонт телевизоров и ноутбуков в Сыктывкаре
+                </h1>
+              </div>
+
+              <div class="glass_card">
+                <h2 class="service_text_list_title">Наши услуги и гарантии</h2>
+                <ul>
+                  <li class="service_text_list">
+                    <span class="material-symbols-outlined">
+                      person_shield
+                    </span>
+                    <div>
+                      <span class="service_text_list_bold"
+                        >Срок ремонта от 1 дня —</span
+                      >
+                      показываем скорость.
+                    </div>
+                  </li>
+                  <li class="service_text_list">
+                    <span class="material-symbols-outlined"> settings </span>
+                    <div>
+                      <span class="service_text_list_bold"
+                        >Ремонт любой сложности —</span
+                      >
+                      подчеркиваем профессионализм.
+                    </div>
+                  </li>
+                  <li class="service_text_list">
+                    <span class="material-symbols-outlined">
+                      event_available
+                    </span>
+                    <div>
+                      <span class="service_text_list_bold"
+                        >Гарантия 1 год —</span
+                      >
+                      даем уверенность в результате.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="glass_card">
+                <h2 class="service_text_list_title">Ваши бонусы</h2>
+                <ul>
+                  <li class="service_text_list">
+                    <span class="material-symbols-outlined">
+                      featured_seasonal_and_gifts
+                    </span>
+                    <div>
+                      <span class="service_text_list_bold"
+                        >Диагностика 0 ₽ —</span
+                      >
+                      даже если вы откажетесь от ремонта.
+                    </div>
+                  </li>
+                  <li class="service_text_list">
+                    <span class="material-symbols-outlined">
+                      delivery_truck_speed
+                    </span>
+                    <div>
+                      <span class="service_text_list_bold"
+                        >Доставка техники —</span
+                      >
+                      сами увезем и привезем ваш телевизор.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="malfunction">
+       <section class="malfunction">
         <div class="malfunction_container">
           <div class="malfunction_container_TV">
             <h2 class="malfunction_TV_title">
@@ -534,7 +565,7 @@
           </div>
         </div>
       </section>
-      <section class="review">
+      <!--<section class="review">
         <div class="review_container">
           <div class="review_container_Yandex">
             <a
@@ -629,9 +660,9 @@
             </video>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer_container">
         <p class="footer_text">
           ВНИМАНИЕ! ДАННЫЙ САЙТ НОСИТ ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ ПРИ КАКИХ
@@ -640,6 +671,6 @@
         </p>
         <p class="footer_text">© 2025. Все права защищены.</p>
       </div>
-    </footer>
+    </footer>  -->
   </body>
 </html>
