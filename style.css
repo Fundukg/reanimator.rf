@@ -7,8 +7,10 @@ main {
   max-width: 2000px;
   margin: 0 auto;
   height: 100%;
-
   background-color: #ffffff;
+  padding: 10px;
+  padding-top: 150px;
+  width: 100%;
 }
 header {
   position: fixed;
@@ -19,6 +21,7 @@ header {
   z-index: 99;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .header_container {
   width: 100%;
@@ -62,14 +65,8 @@ header {
   color: #000000;
   text-align: center;
 }
-main {
-  padding-top: 150px;
-  width: 100%;
-}
-
 .img_and_services {
   width: 100%;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -97,6 +94,7 @@ main {
   object-fit: cover;
   border-radius: 50px;
   filter: brightness(0.6);
+  min-height: 750px;
 }
 
 .services_wrapper {
@@ -106,9 +104,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   padding-left: 5%;
+  padding-right: 5%;
 }
 
 .glass_card {
@@ -119,6 +118,7 @@ main {
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
 }
 
 .service_text_title {
@@ -171,7 +171,7 @@ main {
   width: 80%;
   justify-content: center;
   flex-direction: column;
-  margin: 0 auto; /* Чтобы сам контейнер был по центру страницы */
+  margin: 0 auto;
   gap: 100px;
   padding-top: 50px;
 }
@@ -199,11 +199,14 @@ main {
   overflow: hidden;
   opacity: 0;
   max-height: 0;
-  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    padding 0.4s ease;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* max-width: 600px; */
+
   width: 100%;
   padding-left: 24px;
 }
@@ -257,24 +260,24 @@ main {
   line-height: 1.5;
   margin: 0;
   color: #000000;
-  list-style: none; /* Убираем стандартные маркеры */
+  list-style: none;
   padding-left: 20px;
 }
 .malfunction_TV_list_text::before {
-  content: "—"; /* Сам прочерк */
-  color: #000; /* Цвет прочерка */
-  font-weight: bold; /* Жирность (опционально) */
+  content: "—";
+  color: #000;
+  font-weight: bold;
   display: inline-block;
-  width: 1em; /* Ширина для выравнивания */
-  margin-left: -20px; /* Сдвигаем прочерк влево */
+  width: 1em;
+  margin-left: -20px;
 }
 .malfunction_TV_list_baisec_text {
   padding-top: 20px;
 }
 .malfunction_container_button {
   width: 100%;
-  display: inline-flex; /* Позволяет выровнять иконку и текст в ряд */
-  align-items: center; /* Центрирует иконку и текст по вертикали */
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
   padding: 20px;
 }
@@ -390,7 +393,6 @@ main {
   overflow: hidden;
 }
 
-/* Контейнер с текстом */
 .contacts_container_addres {
   max-width: 40%;
   flex: 1;
@@ -400,19 +402,17 @@ main {
   gap: 15px;
 }
 
-/* Заголовки разделов (Наш адрес, Наши телефоны) */
 .contacts_our_addres,
 .contacts_our_number,
 .contacts_our_email {
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  color: #000000; /* Голубой акцент как в других блоках */
+  color: #000000;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
-/* Стили текста и ссылок */
 .contacts_addres,
 .contacts_time_work,
 .contacts_number,
@@ -435,16 +435,14 @@ main {
   transform: scale(1.1);
 }
 
-/* Иконки Material Symbols */
 .contacts_icon {
-  color: #ff9800; /* Оранжевый акцент */
+  color: #ff9800;
   background: rgba(255, 152, 0, 0.1);
   padding: 8px;
   border-radius: 12px;
   font-size: 24px !important;
 }
 
-/* Контейнер мессенджеров */
 .messengers_row {
   display: flex;
   gap: 15px;
@@ -474,7 +472,6 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  /* width: 100%; */
 }
 
 .location_container_grid_item {
@@ -487,14 +484,13 @@ main {
   width: 100%;
 }
 .location_container_item img {
-  width: 100%; /* Картинка занимает всю ширину ячейки */
-  height: 500px; /* Задаем фиксированную высоту */
+  width: 100%;
+  height: 500px;
   border-radius: 12px;
-  /* object-fit: cover; */
 }
 .location_container_video {
   display: grid;
-  grid-template-columns: max-content;
+  /* grid-template-columns: max-content; */
 }
 .location_video {
   width: 100%;
@@ -503,8 +499,8 @@ main {
   object-fit: cover;
 }
 .footer {
-  background: rgba(25, 25, 25, 0.8); /* Темный полупрозрачный фон */
-  backdrop-filter: blur(10px); /* Тот самый легкий блюр 🌌 */
+  background: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 0 20px;
   color: #ffffff;
@@ -514,7 +510,6 @@ main {
 .footer_container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   max-width: 2000px;
   width: 50%;
@@ -526,4 +521,200 @@ main {
   font-weight: 400;
   margin: 0;
   color: #ffffff;
+}
+@media (max-width: 1650px) {
+  .service_text_title {
+    font-size: 30px;
+  }
+  .service_text_list_title {
+    font-size: 20px;
+  }
+  .service_text_list {
+    font-size: 15px;
+  }
+  .review_container {
+    align-items: baseline;
+  }
+  .contacts_container_map {
+    max-width: 50%;
+  }
+  .contacts_container_addres {
+    max-width: 50%;
+  }
+  .location_container_item img {
+    height: 400px;
+  }
+  .location_video {
+    height: 400px;
+  }
+  .footer_container {
+    width: 78%;
+  }
+}
+@media (max-width: 1250px) {
+  .review_container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .review_container_Yandex,
+  .review_container_avito,
+  .contacts_container,
+  .location_container {
+    width: 100%;
+  }
+  .contacts_container,
+  .location_container {
+    padding: 0;
+  }
+  .contacts_container_place {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts_container_map {
+    max-width: 60%;
+  }
+  .contacts_container_addres {
+    max-width: 100%;
+  }
+  .location_container_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .header_container_logo_img {
+    height: 50%;
+  }
+  .header_contact_text_call {
+    font-size: 28px;
+  }
+  .header_contact_text_number {
+    font-size: 35px;
+  }
+  .service_text_title {
+    font-size: 25px;
+  }
+  .service_text_list_title {
+    font-size: 18px;
+  }
+  .service_text_list {
+    font-size: 13px;
+  }
+  .malfunction_container {
+    gap: 50px;
+  }
+  .malfunction_TV_list_container_text > p {
+    font-size: 17px;
+  }
+  .malfunction_TV_list_text {
+    font-size: 17px;
+  }
+  .malfunction_container,
+  .review_container {
+    width: 100%;
+  }
+  .review_container {
+    width: 100%;
+    padding: 0;
+  }
+  .review_yandex,
+  .review_avito {
+    max-width: 600px;
+    width: 100%;
+  }
+  .contacts_container_map {
+    max-width: 100%;
+    height: 400px;
+  }
+  .location_container_item img {
+    height: auto;
+  }
+  .location_video {
+    height: auto;
+    max-height: 300px;
+  }
+  .footer_container {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer_text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .header_container_logo_img {
+    height: 39%;
+    border-radius: 10px;
+  }
+  .header_contact_text_call {
+    font-size: 20px;
+  }
+  .header_contact_text_number {
+    font-size: 25px;
+  }
+  .contacts_our_addres,
+  .contacts_our_number,
+  .contacts_our_email {
+    font-size: 17px;
+  }
+  .contacts_addres,
+  .contacts_time_work,
+  .contacts_number,
+  .contacts_email {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    padding: 5px;
+  }
+  .header_container_logo_img {
+    height: 32%;
+    border-radius: 10px;
+  }
+  .header_contact_text_call {
+    font-size: 19px;
+  }
+  .header_contact_text_number {
+    font-size: 23px;
+  }
+  .img_and_services_img {
+    display: none;
+  }
+  .service_text_title {
+    font-size: 25px;
+  }
+  .service_text_list_title {
+    font-size: 20px;
+  }
+  .service_text_list {
+    font-size: 15px;
+  }
+  .malfunction_TV_title {
+    font-size: 20px;
+  }
+  .malfunction_TV_header_text {
+    font-size: 18px;
+  }
+  .malfunction_TV_list_container_text.is_open {
+    max-height: 520px;
+  }
+  .malfunction_TV_list_container_text > p {
+    font-size: 15px;
+  }
+  .malfunction_TV_list_text {
+    font-size: 15px;
+  }
+  .malfunction_call_button {
+    font-size: 17px;
+  }
+  .review_button_link {
+    font-size: 17px;
+  }
+  .footer_container {
+    width: 100%;
+    padding: 5px;
+  }
+  .footer_text {
+    font-size: 8px;
+  }
 }
