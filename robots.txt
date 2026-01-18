@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /img/
+Disallow: /video/
+
+# Укажите здесь реальный путь к вашей карте сайта
+Sitemap: https://реаниматор11.рф/sitemap.xml
