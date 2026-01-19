@@ -68,7 +68,7 @@ br {
 .header_info_city {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 40px;
   margin: 0 0 5px 0;
   color: #000000;
 }
@@ -573,7 +573,7 @@ br {
 }
 @media (max-width: 1650px) {
   .header_info_city {
-    font-size: 22px;
+    font-size: 30px;
   }
   br {
     display: flex;

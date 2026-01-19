@@ -5,8 +5,9 @@ function initMap() {
     script.type = "text/javascript";
     script.charset = "utf-8";
     script.async = true;
+    // Исправлено: заменено &amp; на &
     script.src =
-      "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b3c4e3cc05e93c3d563a495387dafd90a3aa81dcb3241299eab9987da8ebcf8&amp;width=100%&amp;height=720&amp;lang=ru_RU&amp;scroll=true";
+      "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b3c4e3cc05e93c3d563a495387dafd90a3aa81dcb3241299eab9987da8ebcf8&width=100%&height=720&lang=ru_RU&scroll=true";
     map.appendChild(script);
   }
 }

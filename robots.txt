@@ -3,5 +3,5 @@ Allow: /
 Disallow: /img/
 Disallow: /video/
 
-# Укажите здесь реальный путь к вашей карте сайта
-Sitemap: https://реаниматор11.рф/sitemap.xml
+# Ссылка на карту сайта в Punycode
+Sitemap: https://xn--11-6kcdl6bc7as1f.xn--p1ai/sitemap.xml
