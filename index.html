@@ -24,7 +24,7 @@
     />
     <meta property="og:image" content="./img/logos/mascot.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https:// реаниматор11.рф" />
+    <meta property="og:url" content="https://реаниматор11.рф" />
     <meta property="og:locale" content="ru_RU" />
 
     <script type="application/ld+json">
@@ -84,6 +84,78 @@
     <link rel="icon" href="./img/logos/mascot.png" />
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PNSTGN8C");
+    </script>
+    <!-- End Google Tag Manager -->
+    2. Вставьте этот код сразу же после открывающего тега :
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PNSTGN8C"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--
+Yandex.Metrika
+counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js?id=106330976",
+        "ym",
+      );
+
+      ym(106330976, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/106330976"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <header class="header">
@@ -92,21 +164,19 @@
           <img
             src="./img/logos/logo.png"
             class="header_container_logo_img"
-            alt="Логотип сервисного центра Реаниматор"
+            alt="Сервисный центр Реаниматор Сыктывкар"
           />
         </div>
+
+        <div class="header_info">
+          <p class="header_info_city">г. Сыктывкар, ул. Первомайская, д.62</p>
+        </div>
+
         <div class="header_container_contact">
-          <a
-            href="tel:+78212568786"
-            class="header_contact_text_call_our_quetions"
-            >По всем вопросам звоните <br />56-87-86</a
-          >
-          <a href="tel:+78212568786" class="header_contact_text_call"
-            >Звоните</a
-          >
-          <a href="tel:+78212568786" class="header_contact_text_number"
-            >56-87-86</a
-          >
+          <a href="tel:+78212568786" class="header_contact_button">
+            <span class="btn_call_text">Звоните!</span>
+            <span class="btn_call_number">56-87-86</span>
+          </a>
         </div>
       </div>
     </header>
@@ -176,7 +246,7 @@
                     </span>
                     <div>
                       <span class="service_text_list_bold"
-                        >Всегда  низкие цены
+                        >Всегда низкие цены
                       </span>
                     </div>
                   </li>
@@ -207,7 +277,7 @@
                     </span>
                     <div>
                       <span class="service_text_list_bold"
-                        >Доставка техники —</span
+                        >Доставка техники 0 ₽ —</span
                       >
                       сами увезем и привезем ваш телевизор
                     </div>
@@ -850,16 +920,25 @@
         <div class="location_container">
           <div class="location_container_grid">
             <div class="location_container_item">
-              <img src="./img/location/IMG_7354.jpg" alt="Вид с улицы на Первомайскую 62" />
+              <img
+                src="./img/location/IMG_7354.jpg"
+                alt="Вид с улицы на Первомайскую 62"
+              />
             </div>
             <div class="location_container_item">
               <img src="./img/location/Свечка двор.jpg" alt="Вход со двора" />
             </div>
             <div class="location_container_item">
-              <img src="./img/location/Свечка вход.jpg" alt="Вход в офисное здание" />
+              <img
+                src="./img/location/Свечка вход.jpg"
+                alt="Вход в офисное здание"
+              />
             </div>
             <div class="location_container_item">
-              <img src="./img/location/Свечка этаж.jpg" alt="Табличка Реаниматор на 3 этаже" />
+              <img
+                src="./img/location/Свечка этаж.jpg"
+                alt="Табличка Реаниматор на 3 этаже"
+              />
             </div>
           </div>
           <div class="location_container_video">

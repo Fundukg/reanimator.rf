@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 15px;
+}
 main {
   max-width: 2000px;
   margin: 0 auto;
@@ -28,58 +31,88 @@ br {
 }
 .header_container {
   width: 100%;
-  max-width: 2000px;
-  height: 130px;
+  max-width: 2000px; /* Ограничим ширину для лучшего вида на больших экранах */
+  margin: 0 auto;
+  height: 120px; /* Немного увеличим высоту для комфорта */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
   box-sizing: border-box;
 }
+
+/* Левая часть */
 .header_container_logo {
+  flex: 1; /* Занимает 1 часть пространства */
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
 }
+
 .header_container_logo_img {
-  height: 100%;
+  height: 80%;
+  object-fit: contain;
   border-radius: 20px;
 }
-.header_container_contact {
+
+/* Центральная часть */
+.header_info {
+  flex: 2; /* Занимает больше места, чтобы текст не сжимался */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Центрирует текст внутри блока */
+  text-align: center;
 }
-.header_contact_text_call_our_quetions {
+
+.header_info_city {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 0 5px 0;
+  color: #000000;
+}
+
+/* Правая часть (Кнопка) */
+.header_container_contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Прижимает кнопку к правому краю */
+}
+
+.header_contact_button {
+  background-color: #e31e24; /* Красный цвет под ваш логотип */
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(227, 30, 36, 0.2);
+}
+
+.header_contact_button:hover {
+  background-color: #c4191f;
+  transform: translateY(-2px);
+}
+
+.btn_call_text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+.btn_call_number {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-}
-.header_contact_text_call {
-  display: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-  align-self: center;
-}
-.header_contact_text_number {
-  display: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
+  font-size: 30px;
 }
 .img_and_services {
   width: 100%;
@@ -539,6 +572,9 @@ br {
   color: #ffffff;
 }
 @media (max-width: 1650px) {
+  .header_info_city {
+    font-size: 22px;
+  }
   br {
     display: flex;
   }
@@ -571,6 +607,21 @@ br {
   }
 }
 @media (max-width: 1250px) {
+  .header_container_contact {
+    align-items: center;
+  }
+  .header_contact_label {
+    font-size: 15px;
+  }
+  .header_contact_button {
+    padding: 10px 15px;
+  }
+  .btn_call_text {
+    font-size: 22px;
+  }
+  .btn_call_number {
+    font-size: 25px;
+  }
   .review_container {
     flex-direction: column-reverse;
     align-items: center;
@@ -609,16 +660,28 @@ br {
   }
 }
 @media (max-width: 1050px) {
+  .header_info {
+    display: none;
+  }
   .header_container_logo_img {
     height: 70%;
   }
-  .header_contact_text_call_our_quetions {
-    font-size: 30px;
+  .header_container_contact {
+    align-items: flex-end;
   }
 }
 @media (max-width: 750px) {
   .header_contact_text_call_our_quetions {
     display: none;
+  }
+  /* .header_contact_button{
+    padding: 10px 15px;
+  } */
+  .btn_call_text {
+    font-size: clamp(15px, 0.82vw + 0.82rem, 22px);
+  }
+  .btn_call_number {
+    font-size: clamp(17px, 0.82vw + 0.82rem, 25px);
   }
   .header_container_logo_img {
     height: 50%;
@@ -689,6 +752,16 @@ br {
     height: 75%;
     border-radius: 10px;
   }
+  .header_contact_button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .btn_call_text {
+    font-size: clamp(5px, 0.82vw + 0.82rem, 15px);
+  }
+  .btn_call_number {
+    font-size: clamp(8px, 0.82vw + 0.82rem, 17px);
+  }
   .header_contact_text_call {
     font-size: 20px;
   }
@@ -715,8 +788,17 @@ br {
     height: 50px;
   }
   .header_container_logo_img {
-    height: 63%;
+    height: 62%;
     border-radius: 10px;
+  }
+  .header_contact_button {
+    padding: 2px 5px;
+  }
+  .btn_call_text {
+    font-size: 12px;
+  }
+  .btn_call_number {
+    font-size: 12px;
   }
   .header_contact_text_call {
     font-size: 19px;
